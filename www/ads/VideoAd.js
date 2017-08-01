@@ -59,7 +59,7 @@
         throw new TypeError('"tag" must be undefined or of type string');
       }
       
-      return Common.exec(SERVICE, 'fetch');
+      return Common.exec(SERVICE, 'fetch', tag);
     },
 
     /**
@@ -74,7 +74,7 @@
         throw new TypeError('"tag" must be undefined or of type string');
       }
 
-      return Common.exec(SERVICE, 'show');
+      return Common.exec(SERVICE, 'show', tag);
     },
 
     /**
