@@ -88,9 +88,11 @@
     <header-file src="src/ios/CDVHZBannerAd.h" />
     <source-file src="src/ios/CDVHZBannerAd.m" />
     <!-- / Adapters -->
-    
+
     <!-- Heyzap SDK -->
-    <framework src="src/ios/sdk/Heyzap/HeyzapAds.framework" custom="true" compiler-flags="-fmodules" />
+    <dependency id="cordova-plugin-cocoapod-support"/>
+    <pods-config ios-min-version="7.0" uses-frameworks="true"/>
+    <pod id="Heyzap" version="~> 9.11.4"/>
     <!-- / Heyzap SDK -->
 
     <!-- External Frameworks -->
@@ -181,7 +183,7 @@
     
     <!-- Heyzap SDK -->
     <source-file src="src/android/sdk/heyzap-ads-sdk.jar" target-dir="libs" />
-    <framework src="com.google.android.gms:play-services-ads:+" />
+    <framework src="com.google.android.gms:play-services-ads:11.0.+" />
     <!-- / Heyzap SDK -->
     
     <!-- Adapters -->
